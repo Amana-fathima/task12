@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Register</h2>
+    <form action="submit.html" method="GET" onsubmit="return validatePasswords()">
+      <label>First Name:</label>
+      <input type="text" name="firstName" required>
+
+      <label>Last Name:</label>
+      <input type="text" name="lastName" required>
+
+      <label>Email ID:</label>
+      <input type="email" name="email" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" required>
+
+      <label>Password:</label>
+      <input type="password" id="password" required>
+
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
